@@ -1,0 +1,4 @@
+$ curl.exe --silent --show-error --max-time 30 --location --output submission/githubrepo.html --write-out "HTTP_STATUS=%{http_code}\nURL=%{url_effective}\n" https://github.com/daniarulyabubakyr/expressBookRevie
+
+HTTP_STATUS=200
+URL=https://github.com/daniarulyabubakyr/expressBookRevie

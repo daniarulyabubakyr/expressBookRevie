@@ -1,0 +1,4 @@
+$ curl.exe --silent --show-error --max-time 30 --write-out "\nHTTP_STATUS=%{http_code}\n" --request DELETE --cookie submission/cookies.txt http://127.0.0.1:5000/customer/auth/review/1
+
+{"message":"Review deleted successfully.","reviews":{}}
+HTTP_STATUS=200

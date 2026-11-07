@@ -1,0 +1,4 @@
+$ curl.exe --silent --show-error --max-time 30 --write-out "\nHTTP_STATUS=%{http_code}\n" --request PUT --cookie submission/cookies.txt --header "Content-Type: application/json" --data-binary @submission/updated-review.json http://127.0.0.1:5000/customer/auth/review/1
+
+{"message":"Review updated successfully.","reviews":{"submission_user":"Updated: a powerful story with memorable characters."}}
+HTTP_STATUS=200

@@ -1,0 +1,4 @@
+$ curl.exe --silent --show-error --max-time 30 --write-out "\nHTTP_STATUS=%{http_code}\n" http://127.0.0.1:5000/review/1
+
+{}
+HTTP_STATUS=200

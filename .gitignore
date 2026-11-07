@@ -1,0 +1,6 @@
+# Distribution / packaging
+node_modules
+.env
+*.log
+cookies.txt
+submission/githubrepo.html

@@ -1,0 +1,44 @@
+
+> bookshop@1.0.1 test
+> node --test
+
+▶ Book review application over real HTTP
+  ✔ GET / returns all ten original books (44.7741ms)
+  ✔ GET ISBN returns exact book (11.7356ms)
+  ✔ author search supports multiple matches and case-insensitive substrings (9.5372ms)
+  ✔ title search decodes spaces and supports case-insensitive substrings (10.44ms)
+  ✔ existing book initially has no reviews (7.7348ms)
+  ✔ missing books and unmatched searches return 404 (13.8323ms)
+  ✔ prototype property names are not book IDs (7.994ms)
+  ✔ blank search and malformed URL return 400 (7.0348ms)
+  ✔ registration rejects missing, blank and wrongly typed credentials (41.7024ms)
+  ✔ registration creates user with hashed password (53.034ms)
+  ✔ duplicate and concurrent duplicate registrations return 409 (73.9028ms)
+  ✔ login rejects missing and invalid credentials (74.7938ms)
+  ✔ unauthenticated review creation, update and deletion are rejected (16.8694ms)
+  ✔ login issues a usable session cookie (67.1904ms)
+  ✔ tampered session cookie is rejected (4.1604ms)
+  ✔ review validation rejects empty, invalid and oversized review text (25.081ms)
+  ✔ review mutations reject missing books and inherited keys (18.0326ms)
+  ✔ adding review persists it and ignores spoofed username (20.9484ms)
+  ✔ updating review replaces only the current user entry (7.5733ms)
+  ✔ second user cannot delete another user review (120.1388ms)
+  ✔ IBM query-string review input and user isolation both work (5.9817ms)
+  ✔ delete removes only the signed-in user review (8.6633ms)
+  ✔ prototype-like username is stored and deleted as an ordinary own key (121.7311ms)
+  ✔ malformed JSON, large bodies and missing routes return JSON errors (11.1325ms)
+  ✔ Axios async/await retrieves all books over HTTP (15.2925ms)
+  ✔ Axios callback retrieves all books over HTTP (4.2031ms)
+  ✔ Axios Promise retrieves ISBN and propagates missing book rejection (7.2276ms)
+  ✔ Axios author method retrieves multiple books and handles unicode (9.5636ms)
+  ✔ Axios title Promise encodes spaces and unicode and propagates errors (8.0685ms)
+  ✔ Axios callback and Promise report HTTP failures (6.0664ms)
+✔ Book review application over real HTTP (871.6673ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1670.6613

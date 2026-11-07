@@ -1,0 +1,4 @@
+$ curl.exe --silent --show-error --max-time 30 --write-out "\nHTTP_STATUS=%{http_code}\n" --request POST --header "Content-Type: application/json" --data-binary @submission/credentials.json --cookie-jar submission/cookies.txt http://127.0.0.1:5000/customer/login
+
+{"message":"User successfully logged in.","username":"submission_user"}
+HTTP_STATUS=200
